@@ -1,17 +1,44 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-  {% include "homepage/components/navbar.html" %}
-  {% include "homepage/components/baner.html" %}
-  {% include "homepage/components/sobre.html" %}
-  {% include "homepage/components/extatistica.html" %}
-  {% include "homepage/components/recursos.html" %}
-  {% include "homepage/components/desenvolvedor.html" %}
-  {% include "homepage/components/cta.html" %}
-  {% include "homepage/components/contato.html" %}
-  {% include "homepage/components/courses.html" %}
-  {% include "homepage/components/galeria.html" %}
-  {% include "homepage/components/footer.html" %}
-
+ 
+  <div id="drawer" class="drawer">
+    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content">
+      <!-- Page content here --> 
+        {% include "homepage/components/navbar.html" %}
+        {% include "homepage/components/baner.html" %}
+        {% include "homepage/components/sobre.html" %}
+        {% include "homepage/components/extatistica.html" %}
+        {% include "homepage/components/recursos.html" %}
+        {% include "homepage/components/desenvolvedor.html" %}
+        {% include "homepage/components/cta.html" %}
+        {% include "homepage/components/contato.html" %}
+        {% include "homepage/components/courses.html" %} 
+        {% include "homepage/components/galeria.html" %}
+        {% include "homepage/components/footer.html" %}
+    </div>  
+    <div class="drawer-side">
+      <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+      <ul class="menu p-4 w-full sm:w-80 min-h-full bg-base-200 text-base-content items-center">
+        <!-- Sidebar content here -->
+        <li>
+          <hr class="my-10"/>         
+        </li>
+       
+        <li>
+          <a onclick="trogleDrawer()" class="btn btn-wide" href="#home">Linkedin</a>
+        </li>
+        <li>
+            <a onclick="trogleDrawer()" class="btn btn-wide" href="#produtos">Github</a>
+        </li>
+        <li>
+            <a onclick="trogleDrawer()" class="btn btn-wide" href="#mercado">Youtube</a>
+        </li>
+        <li>
+            <a onclick="trogleDrawer()" class="btn btn-wide" href="#footer">Medium</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 {% endblock %}
