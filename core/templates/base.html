@@ -7,9 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daniel França</title>
     <link href="{% static 'css/tw-main.css' %}" rel="stylesheet">
+
+    <link media="screen" href="{% static 'particlejs/css/style.css' %}" rel="stylesheet">
+   
   </head>
   <body>
+    <!-- <div id="particles-js"></div> -->
     {% block content %}
     {% endblock %}
   </body>
+  <script src="{% static 'particlejs/particles.js' %}"></script>
+  <script src="{% static 'particlejs/js/app.js' %}"></script>
+
 </html>
