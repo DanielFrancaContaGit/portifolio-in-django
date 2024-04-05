@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "core",
+    "django_distill",
 ]
 
 MIDDLEWARE = [
@@ -118,9 +119,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
+DISTILL_DIR = "distil"
+
 STATIC_URL = "/static/"
 
 STATICFILES_DIR = [BASE_DIR / "core/static"]
+
+STATIC_ROOT = BASE_DIR / "vol" / "web" / "static"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
