@@ -1,14 +1,12 @@
+{% load svg %}
+
 {% block content %}
 
-    <div class="hero min-h-screen ">
+    <div class="hero my-10">
       <div class="hero-content flex-col-reverse md:justify-around md:flex-row-reverse">
         
-        <figure className="rounded-lg shadow-2xl md:size-96">
-          <img
-            src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg"
-            alt="Shoes"
-            class="size-full object-none"
-          />
+        <figure class="rounded-lg md:size-96">
+          {% svg 'developer' %}
         </figure>
 
         <div class="md:w-1/2 px-10">
