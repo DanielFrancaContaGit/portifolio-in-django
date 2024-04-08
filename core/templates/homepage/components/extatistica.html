@@ -1,3 +1,4 @@
+{% load svg %}
 {% block content %}
  <div class="flex flex-col md:flex-row w-full md:h-96 lg:flex-row justify-center items-center bg-black py-20 px-10 md:px-24">
       <div class="flex flex-col text-white content-around mb-14">
@@ -5,8 +6,28 @@
         <h1 class="text-4xl font-bold my-3">Estatísticas de Carreira</h1>
         <p>Apresentamos algumas estatísticas relevantes da minha carreira. Confira abaixo.</p>
         <div class="flex justify-between max-w-60 mt-5">
-          <button class="btn btn-outline text-white rounded">Saiba Mais</button>
-          <button class="btn btn-ghost rounded">Inscreva-se</button>
+          <a 
+            href="https://www.linkedin.com/in/daniel-silva-franca/" 
+            target="blank"
+          >
+          <button class="btn btn-outline text-white rounded">
+            <figure class="fill-white size-5">
+                {% svg 'icons8-linkedin' %}
+            </figure>
+            Linkedin
+          </button>
+          </a>
+          <a 
+            href="https://github.com/DanielFrancaContaGit"
+            target="blank"
+          >
+            <button class="btn btn-ghost rounded">
+              <figure class="fill-white size-5">
+                  {% svg 'icons8-github' %}
+              </figure>
+              Github
+            </button>
+          </a>
         </div>
       </div>
       <div class="flex flex-row text-white content-around flex-wrap md:ml-10">
@@ -14,15 +35,15 @@
           <div class="flex flex-row mb-5">
             <div class="divider divider-neutral divider-horizontal ml-0"></div>
             <div>
-              <h1 class="text-5xl font-bold">50+</h1>
-              <p>Projetos Concluídos</p>
+              <h1 class="text-5xl font-bold">70+</h1>
+              <p>Projetos Feitos</p>
             </div>
           </div>
 
           <div class="flex flex-row">
             <div class="divider divider-neutral divider-horizontal  ml-0"></div>
             <div>
-              <h1 class="text-5xl font-bold">10+</h1>
+              <h1 class="text-5xl font-bold">3+</h1>
               <p>Tecnologias Dominadas</p>
             </div>
           </div>
@@ -32,7 +53,7 @@
           <div class="flex flex-row mb-5">
             <div class="divider divider-neutral divider-horizontal ml-0"></div>
             <div>
-              <h1 class="text-5xl font-bold">5+</h1>
+              <h1 class="text-5xl font-bold">2+</h1>
               <p>Anos de Experiência</p>
             </div>
           </div>
@@ -40,8 +61,8 @@
           <div class="flex flex-row">
             <div class="divider divider-neutral divider-horizontal ml-0"></div>
             <div>
-              <h1 class="text-5xl font-bold">100%</h1>
-              <p>Satisfação do Cliente</p>
+              <h1 class="text-5xl font-bold">30%</h1>
+              <p>Graduação concluida</p>
             </div>
           </div>
         </div>
