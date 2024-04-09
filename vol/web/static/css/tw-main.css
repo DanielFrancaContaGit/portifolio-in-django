@@ -4779,6 +4779,10 @@ html:has(.drawer-toggle:checked) {
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
   .sm\:w-80 {
     width: 20rem;
   }
@@ -4808,6 +4812,10 @@ html:has(.drawer-toggle:checked) {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .md\:block {
