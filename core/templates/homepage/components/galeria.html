@@ -1,27 +1,29 @@
 {% block content %}
-  <div class="flex flex-col h-screen justify-center items-center p-5">
-    <h1 class="text-5xl text-base-content font-bold mb-5">Galeria de Imagens</h1>
-    <p>Explore projetos anteriores e interfaces criadas pelo desenvolvedor.</p>
-    <div class="carousel carousel-center w-9/12 p-4 space-x-4 rounded mt-10">
-      <div class="carousel-item">
-        <img src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg" class="rounded size-80" />
+  <section class="flex flex-col my-40  justify-center items-center p-5">
+    <h1 class="text-3xl md:text-5xl text-base-content font-bold mb-5">Tecnologias que já trabalhei</h1>
+    <div class="flex justify-center items-center flex-col w-full md:w-1/2 p-4 space-x-4 rounded mt-10">
+      <div class="flex justify-around items-center mb-9 w-full">
+        <div class="carousel-item">
+          <img src=https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/python/python-original.svg class="rounded size-20 " />
+        </div>
+        <div class="carousel-item bg-white p-2 rounded-full">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/django/django-plain-wordmark.svg" class="rounded size-20 " />
+        </div>
+        <div class="carousel-item">
+          <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png" class="rounded size-20 " />
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg" class="rounded size-80" />
-      </div>
-      <div class="carousel-item">
-        <img src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg" class="rounded size-80" />
-      </div>
-      <div class="carousel-item">
-        <img src="https://daisyui.com/images/stock/photo-1494253109108-2e30c049369b.jpg" class="rounded size-80" />
-      </div>
-
-      <div class="carousel-item">
-        <img src="https://daisyui.com/images/stock/photo-1559181567-c3190ca9959b.jpg" class="rounded size-80" />
-      </div>
-      <div class="carousel-item">
-        <img src="https://daisyui.com/images/stock/photo-1601004890684-d8cbf643f5f2.jpg" class="rounded size-80" />
+      <div class="flex justify-around items-center w-full">
+        <div class="carousel-item">
+          <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" class="rounded size-20 " />
+        </div>
+            <div class="carousel-item">
+          <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" class="rounded size-20 " />
+        </div>
+        <div class="carousel-item bg-white rounded p-1">
+          <img src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/postgresql/postgresql-original-wordmark.svg" class="rounded size-20 " />
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 {% endblock %}

@@ -1,14 +1,14 @@
 {% load static %} 
 {% block content %}
-  <div class="flex mt-10 flex-col justify-center items-center md:p-10">
-    <div class="w-screen md:pl-20 mb-24 px-5">
+  <section class="flex mt-10 flex-col justify-center items-center md:p-10">
+    <div class=" md:pl-20 mb-24 w-full px-5">
       <h1 class="text-4xl md:text-5xl font-bold text-base-content my-4">
         Projetos que já desenvolvi
       </h1>
       <p>Aqui estão alguns projetos que fiz, que posso compartilhar</p>
     </div>
 
-    <div class="flex flex-col xl:flex-row justify-around items-center w-screen md:px-20">
+    <div class="flex flex-col xl:flex-row justify-around items-center w-full md:px-20">
       <div class="card w-96 bg-base-100 shadow-xl rounded">
         <figure class="max-h-56">
           <img 
@@ -94,5 +94,5 @@
     >
     <button class="btn btn-outline justify-self-end rounded mt-20">Ver Todos</button>
     </a>
-  </div>
+  </section>
 {% endblock %}
